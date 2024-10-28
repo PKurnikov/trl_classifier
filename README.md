@@ -44,8 +44,8 @@ data/traffic_lights/
 ├── ped_forward/ 
 └── ped_stop/
 
-Добавить в проект в настройках config.py:
-data_dir = "./data/traffic_lights"
-
 Датасет доступен по адресу:
-https://drive.google.com/drive/folders/1Q2T9M2_tOEG9DVtjmfLd9kuYKVteYgOn?usp=drive_link
+https://drive.google.com/file/d/1BYCCLrcA4sQ0MtOV2OF8J2ZeJ_E3fURl/view?usp=drive_link
+
+Необходимо распаковать и добавить в проект в настройках config.py:
+data_dir = "./data/traffic_lights"
