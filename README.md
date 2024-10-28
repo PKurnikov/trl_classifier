@@ -20,13 +20,7 @@
 1. **Запуск обучения**: Основной скрипт для запуска обучения:
 
     ```bash
-    python train.py
-    ```
-
-2. **Экспорт в ONNX**: После завершения обучения можно экспортировать модель:
-
-    ```bash
-    python export_onnx.py
+    python main.py
     ```
 
 ## Настройки
@@ -41,4 +35,17 @@
 
 Датасет должен быть организован в виде папок, где каждая папка соответствует отдельному классу, например:
 
-data/ ├── car_forward/ ├── car_forward_left/ ├── car_forward_right/ ├── car_stop/ ├── flipped/ ├── ped_forward/ └── ped_stop/
+data/traffic_lights/
+├── car_forward/ 
+├── car_forward_left/ 
+├── car_forward_right/ 
+├── car_stop/ 
+├── flipped/ 
+├── ped_forward/ 
+└── ped_stop/
+
+Добавить в проект в настройках config.py:
+data_dir = "./data/traffic_lights"
+
+Датасет доступен по адресу:
+https://drive.google.com/drive/folders/1Q2T9M2_tOEG9DVtjmfLd9kuYKVteYgOn?usp=drive_link
